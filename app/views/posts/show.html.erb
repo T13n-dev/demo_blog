@@ -1,0 +1,33 @@
+<% content_for :page_title, @post.title %>
+
+<section class="section">
+	<div class="container">
+		<nav class="level">
+			<!-- Left side -->
+			<div class="level-left">
+				<div class="level-item">
+					<strong>Actions</strong>
+				</div>
+			</div>
+		</nav>
+	
+		<!-- right side -->
+		<div class="level-right">
+			<p class="level-item">
+				<%= link_to "Edit", edit_post_path(@post), class: "button" %>
+			</p>
+			<div class="level-item">
+				<!-- TODO: Add rails functionality -->
+				<%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure ?"}, class: "button is-danger" %>
+			</div>	
+		</div>
+
+		<div class="content">
+			<%= @post.content %>	
+		</div>
+
+		<div class="comments">
+			
+		</div>
+	</div>
+</section>
