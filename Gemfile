@@ -16,6 +16,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'better_errors', '~> 2.4' # Make errors better looking
 gem 'hirb'
 gem 'bulma-rails' # Bulma Css
+gem 'simple_form'
 
 
 gem 'bootsnap', '>= 1.4.2', require: false
@@ -30,7 +31,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'guard', '~> 2.14', '>= 2.14.1' # Guard is a command line tool to easily handle events on file system modifications.
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
 end
 
 group :test do
