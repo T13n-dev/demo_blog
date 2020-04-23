@@ -40,6 +40,21 @@
         </div>
       </div>
     </section>
+    <br>
+    <!-- Notification -->
+    <div class="container">
+     <% flash.each do |key, value| %>
+      <div class="notification is-info is-light <%= key %>">
+        <button class="delete"></button>
+         <%= value %>
+      </div>
+     <% end %>
+    </div>
     <%= yield %>
+
+
+
+
+    <%= javascript_pack_tag 'custom' %>
   </body>
 </html>

@@ -11,12 +11,12 @@ gem 'webpacker', '~> 4.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 # gem 'redis', '~> 4.0'
-# gem 'bcrypt', '~> 3.1.7'
 # gem 'image_processing', '~> 1.2'
 gem 'better_errors', '~> 2.4' # Make errors better looking
 gem 'hirb'
 gem 'bulma-rails' # Bulma Css
 gem 'simple_form'
+gem "bcrypt"
 
 
 gem 'bootsnap', '>= 1.4.2', require: false
