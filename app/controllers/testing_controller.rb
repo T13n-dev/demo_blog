@@ -1,0 +1,4 @@
+class TestingController < PostsController
+
+
+end

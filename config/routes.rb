@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   	resources :comments
   end
 
-  root "posts#index"
+  # root "posts#index"
+  root to: "testing#index"
+  
 end
